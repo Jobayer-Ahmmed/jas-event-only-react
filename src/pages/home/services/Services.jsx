@@ -1,20 +1,21 @@
-import { Link } from "react-router-dom"
+
+import {  NavLink } from "react-router-dom"
 
 
+const Services = ({handleEventType}) => {
 
 
-const Services = () => {
   return (
     <div className="bg-gray-100 p-5 rounded-lg">
       <h3 className="mb-3 text-2xl">Services</h3>
       <div className="w-full h-[2px] bg-priColor"></div>
       <ul className="mt-3">
-        <li className="mt-1"><Link target="">Weddings</Link></li>
-        <li className="mt-1"><Link target="">Birthday Parties</Link></li>
-        <li className="mt-1"><Link target="">Anniversaries</Link></li>
-        <li className="mt-1"><Link target="">Engagement Parties</Link></li>
-        <li className="mt-1"><Link target="">Retirement Parties</Link></li>
-        <li className="mt-1"><Link target="">Baby shower</Link></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("weddings")}><NavLink >Weddings</NavLink></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("birthday_parties")}><NavLink >Birthday Parties</NavLink></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("anniversaries")}><NavLink >Anniversaries</NavLink></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("engagement_parties")}><NavLink >Engagement Parties</NavLink></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("retirement_parties")}><NavLink >Retirement Parties</NavLink></li>
+        <li id="services" className="mt-1" onClick={()=>handleEventType("baby_shower")}><NavLink >Baby shower</NavLink></li>
       </ul>
   </div>
 
