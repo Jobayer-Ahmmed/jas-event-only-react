@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Cards from "../card/Cards"
 
 
 
@@ -21,7 +22,7 @@ const Services = () => {
           </div>
         </aside>
         <main  className="bg-gray-200 col-span-2">
-          {/* <Cards/> */}
+          <Cards/>
         </main>
     </div>
   )
