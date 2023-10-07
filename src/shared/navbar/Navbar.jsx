@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex justify-center">
-        <span className="btn btn-ghost normal-case text-4xl font-amita font-bold text-priColor -mr-4">jas event</span>
+        <span className="text-4xl font-amita font-bold text-priColor">jas event</span>
         <img src={logo} alt="" className="w-10"/> 
       </div>
     </div>
