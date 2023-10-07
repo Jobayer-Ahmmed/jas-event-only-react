@@ -1,0 +1,160 @@
+
+
+   [
+
+    {
+      "id": "1",
+      "event_type":"weddings",
+      "title": "Royal Castle Wedding",
+      "description": "Step into a world of regal elegance and opulent charm with our Royal Castle Wedding. Imagine a wedding set in the midst of history, in a castle that has stood the test of time. The Royal Castle Wedding offers an enchanting experience where you can say 'I do' in the grandeur of centuries-old stone walls, surrounded by lush courtyards and stunning architecture. The ambiance exudes romance and nobility, transporting you and your guests to a time of chivalry and grace. As you walk down the aisle, you'll feel like royalty, and every moment of this majestic event will be a spectacle of grandeur. The feast that follows will be nothing short of regal, a sumptuous spread fit for kings and queens. The entertainment will mesmerize, leaving everyone in awe. Every aspect of this wedding is designed to make you feel like the monarchs of old, creating memories that will be etched in your hearts forever. The Royal Castle Wedding promises an unforgettable celebration, a fairy tale brought to life, where dreams become reality.",
+      "price": "350,000 tk",
+      "image": "https://example.com/royal_castle_wedding.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Wedding Wonders: A Celebration of Love",
+      "description": "Step into a world of magic and splendor with our Wedding Wonders: A Celebration of Love. Imagine a wedding that transcends ordinary, a celebration where love takes center stage in all its glory. The Wedding Wonders event offers an extraordinary experience, allowing you to say 'I do' in a setting that embodies the true essence of love, surrounded by the joy and blessings of friends and family. The ambiance exudes romance and excitement, transporting you and your guests to a realm where love reigns supreme. As you walk down the aisle, you'll feel the love that brought you together, and every moment of this enchanting event will be a testimony to the power of love. The feast that follows will be a banquet of culinary delights, a sumptuous spread that marks the beginning of a beautiful journey together. The entertainment will dazzle and delight, leaving everyone in awe. Every aspect of this celebration is designed to make you feel the immense love that binds you, creating memories that will last a lifetime. Wedding Wonders: A Celebration of Love promises an unforgettable wedding, a love-filled extravaganza, where hearts unite and love prevails.",
+      "price": "180,000 tk",
+      "image": "https://example.com/wedding_wonders_celebration_of_love.jpg"
+    },
+    {
+      "id": "3",
+      "event_type":"weddings",
+      "title": "Exquisite Destination Wedding",
+      "description": "Embark on a journey of love with our Exquisite Destination Wedding, a celebration that promises to be as extraordinary as your love. Imagine saying 'I do' against the backdrop of a breathtaking beach sunset, the gentle waves providing a symphony to your love story. Or picture exchanging vows amidst the grandeur of a historic villa, surrounded by the vibrant energy of a bustling city. The Exquisite Destination Wedding is a fusion of cultures, flavors, and emotions, making it a truly unique and memorable experience. The destination becomes an integral part of your love story, creating a romantic and awe-inspiring ambiance for your special day. Our dedicated team ensures that every detail is tailored to perfection, providing you and your guests with a seamless and unforgettable celebration. Let the beauty of the destination be the canvas for your love story, as you create cherished memories that will last a lifetime. The Exquisite Destination Wedding promises an unparalleled celebration, where love knows no bounds and dreams take flight.",
+      "price": "250,000 tk",
+      "image": "https://example.com/destination_wedding.jpg"
+    },
+
+    {
+      "id": "4",
+      "event_type":"birthday_parties",
+      "title": "Ultimate Fantasy Adventure Birthday",
+      "description": "Experience the ultimate adventure with our Fantasy Adventure Birthday! Your child and their friends will be transported to a magical realm where they can become wizards, fairies, or mythical creatures. The venue will be transformed into a mystical land with enchanted forests, castles, and magical creatures. Activities include potion-making, spellcasting, magical games, and a magical cake cutting ceremony. Let your child's imagination run wild in this extraordinary fantasy adventure.",
+      "price": "45,000 tk",
+      "image": "https://example.com/fantasy_adventure_birthday.jpg"
+    },
+    {
+      "id": "5",
+      "event_type":"birthday_parties",
+      "title": "Pirate Treasure Hunt Birthday Bash",
+      "description": "Set sail on a pirate adventure with our Pirate Treasure Hunt Birthday Bash! Your little buccaneer and their mates will embark on a thrilling treasure hunt, solving riddles and following the map to hidden treasure. The venue will be transformed into a pirate ship, complete with sails, flags, and hidden treasures. Activities include a treasure hunt, pirate games, a pirate cake cutting ceremony, and pirate dress-up. Let your child's inner pirate shine in this swashbuckling birthday bash.",
+      "price": "40,000 tk",
+      "image": "https://example.com/pirate_birthday.jpg"
+    },
+    {
+      "id": "6",
+      "event_type":"birthday_parties",
+      "title": "Galactic Space Adventure Birthday",
+      "description": "Blast off into a galactic adventure with our Galactic Space Adventure Birthday! Your young astronaut and their fellow space explorers will journey through the cosmos, discovering new planets and stars. The venue will be transformed into a space station, with futuristic decorations and stellar activities. Activities include a 'moonwalk,' space-themed games, an intergalactic cake cutting ceremony, and astronaut dress-up. Let your child's dreams of space exploration take flight in this stellar birthday adventure.",
+      "price": "50,000 tk",
+      "image": "https://example.com/space_birthday.jpg"
+    },
+
+    {
+      "id": "7",
+      "event_type":"anniversaries",
+      "title": "Exclusive Destination Anniversary Retreat",
+      "description": "Celebrate your special anniversary with an exclusive destination retreat. Escape to a luxurious resort nestled in a serene location, surrounded by nature's beauty. Enjoy a private villa with stunning views, a dedicated butler, and spa treatments for ultimate relaxation. Delight in gourmet dining experiences, personalized excursions, and the tranquility that this exclusive retreat offers. Rekindle the romance and celebrate your love in this idyllic and intimate setting.",
+      "price": "100,000 tk",
+      "image": "https://example.com/destination_anniversary.jpg"
+    },
+    {
+      "id": "8",
+      "event_type":"anniversaries",
+      "title": "Opulent Anniversary Gala",
+      "description": "Make your anniversary a grand affair with an opulent gala. Host a lavish event at a luxurious venue, adorned with elegant decorations and a touch of opulence. Enjoy a night of fine dining, entertainment, and dancing, surrounded by friends and family. A dedicated event planner will ensure every detail is perfect for this extravagant celebration of your love.",
+      "price": "120,000 tk",
+      "image": "https://example.com/opulent_anniversary.jpg"
+    },
+    {
+      "id": "9",
+      "event_type":"anniversaries",
+      "title": "Private Yacht Anniversary Cruise",
+      "description": "Sail into the sunset with a private yacht anniversary cruise. Board a luxurious yacht and set sail on a romantic journey on the open waters. Enjoy a sumptuous dinner, champagne, and breathtaking views of the sea and sky. With the yacht all to yourselves, celebrate your anniversary in the most intimate and luxurious way.",
+      "price": "80,000 tk",
+      "image": "https://example.com/yacht_anniversary.jpg"
+    },
+
+    {
+      "id": "10",
+      "event_type":"engagement_parties",
+      "title": "Extravagant Mansion Engagement Gala",
+      "description": "Announce your engagement in a grand and extravagant manner with a Mansion Engagement Gala. Host this opulent event at a stunning mansion, exuding luxury and sophistication. Enjoy an evening of gourmet dining, live entertainment, and dancing with friends and family. The elegant surroundings and lavish ambiance will set the stage for this memorable celebration of your love.",
+      "price": "120,000 tk",
+      "image": "https://example.com/mansion_engagement.jpg"
+    },
+    {
+      "id": "11",
+      "event_type":"engagement_parties",
+      "title": "Luxury Yacht Engagement Cruise",
+      "description": "Embark on a luxurious yacht for an Engagement Cruise that's sure to dazzle. Set sail on the open waters, surrounded by the beauty of the sea and sky. Enjoy a gourmet dinner, champagne, and the gentle lull of the waves. With the yacht all to yourselves, this intimate celebration will be etched in your memories forever.",
+      "price": "90,000 tk",
+      "image": "https://example.com/yacht_engagement.jpg"
+    },
+    {
+      "id": "12",
+      "event_type":"engagement_parties",
+      "title": "Black-Tie Gala Engagement Extravaganza",
+      "description": "Host a sophisticated and glamorous Black-Tie Gala Engagement Extravaganza. Choose a prestigious venue and adorn it with elegant decorations and stunning floral arrangements. Invite your guests to a night of formal elegance, fine dining, and dancing. Make your engagement announcement in a setting that oozes sophistication and class.",
+      "price": "100,000 tk",
+      "image": "https://example.com/blacktie_engagement.jpg"
+    },
+
+    {
+      "id": "13",
+      "event_type":"retirement_parties",
+      "title": "Tropical Retirement Luau",
+      "description": "Celebrate the end of a long and successful career with a Tropical Retirement Luau. Transport your guests to a paradise with tiki torches, leis, and the vibrant colors of the tropics. Enjoy a feast of island-inspired cuisine, tropical drinks, and live music. Let the relaxed and festive atmosphere be the perfect way to bid farewell to a wonderful career and welcome the adventures of retirement.",
+      "price": "40,000 tk",
+      "image": "https://example.com/luau_retirement.jpg"
+    },
+    {
+      "id": "14",
+      "event_type":"retirement_parties",
+      "title": "Elegant Evening Retirement Soiree",
+      "description": "Host an Elegant Evening Retirement Soiree for a sophisticated and memorable retirement celebration. Choose an upscale venue and decorate it with classy and refined elements. Enjoy an evening of fine dining, exquisite wines, and delightful entertainment. Let this elegant event be a reflection of the successful career and the promising retirement ahead.",
+      "price": "50,000 tk",
+      "image": "https://example.com/elegant_retirement.jpg"
+    },
+    {
+      "id": "15",
+      "event_type":"retirement_parties",
+      "title": "Retirement Adventure Cruise",
+      "description": "Embark on a retirement adventure with a special cruise celebration. Set sail on a cruise ship, surrounded by the vastness of the ocean. Enjoy gourmet dining, live entertainment, and exciting activities on board. This cruise adventure marks the beginning of a new chapter, filled with exploration and relaxation in retirement.",
+      "price": "70,000 tk",
+      "image": "https://example.com/cruise_retirement.jpg"
+    },
+
+    {
+      "id": "16",
+      "event_type":"baby_shower",
+      "title": "Whimsical Garden Baby Shower",
+      "description": "Celebrate the upcoming arrival of your little one with a Whimsical Garden Baby Shower. Picture a garden adorned with blooming flowers, fairy lights, and charming decor. Enjoy an outdoor event with delicious treats, fun games, and joyful laughter. Let the natural beauty and magical ambiance of the garden create the perfect setting for welcoming your baby into the world.",
+      "price": "30,000 tk",
+      "image": "https://example.com/garden_babyshower.jpg"
+    },
+    {
+      "id": "17",
+      "event_type":"baby_shower",
+      "title": "Nautical Adventure Baby Shower",
+      "description": "Set sail on a Nautical Adventure Baby Shower to welcome your little sailor. Transform the venue into a ship decked out with nautical decor, ropes, and lifebuoys. Enjoy a sea-themed celebration with ocean-inspired treats, games, and decor. Let this nautical journey be a wonderful start to the exciting adventure of parenthood.",
+      "price": "35,000 tk",
+      "image": "https://example.com/nautical_babyshower.jpg"
+    },
+    {
+      "id": "18",
+      "event_type":"baby_shower",
+      "title": "Royal Princess Baby Shower",
+      "description": "Roll out the royal carpet for a Royal Princess Baby Shower to honor the arrival of your little princess. Choose a venue fit for a queen, with elegant decorations, crowns, and regal themes. Enjoy a princess-inspired event with a majestic cake, games, and a touch of royal charm. Let this event be the crowning glory as you prepare to welcome your precious princess.",
+      "price": "40,000 tk",
+      "image": "https://example.com/princess_babyshower.jpg"
+    }
+  ]
+
+
+
+
+
+
+
