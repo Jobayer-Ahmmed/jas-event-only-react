@@ -1,0 +1,44 @@
+import {useState } from "react"
+import {AiOutlineMenu} from "react-icons/ai"
+import {AiOutlineClose} from "react-icons/ai"
+import { NavLink } from "react-router-dom"
+
+
+const Navbar = () => {
+    const [toggle, setToggle] = useState(true)
+    const handleToggle = ()=>{
+        setToggle(!toggle)
+    }
+
+    const navlinks = <>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
+    </>
+
+
+  return (
+    <header>
+        <nav>                    {/* className="flex justify-between items-center gap-2 lg:gap-0 p-7"   */} 
+            <div className="relative">
+                <ul className={`flex flex-col lg:flex-row duration-700 
+                absolute lg:static bg-gray-200 lg:bg-transparent 
+                p-8 lg:p-0 rounded-lg gap-6 lg:gap-10 
+                ${!toggle? 'right-5 top-20' : '-right-52 top-20'} `}
+                >
+                   {navlinks}
+                </ul>
+
+                <div className="absolute top-4 right-10 text-3xl lg:hidden">
+                    {
+                        toggle? <AiOutlineMenu onClick={handleToggle}/> : <AiOutlineClose onClick={handleToggle}/>
+                    }
+                </div>
+
+            </div>
+        </nav>
+    </header>
+  )
+}
+
+export default Navbar

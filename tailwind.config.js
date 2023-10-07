@@ -8,14 +8,15 @@ export default {
     extend: {
       colors: {
         clifford: '#da373d',
+        priColor: '#FF5733',
 
       },
       spacing: {            
-        // lgWidth: "1100px",
+        xPadding: "150px"
       },
-      // fontFamily:{
-      //   amita : "Amita",
-      // },
+      fontFamily:{
+        amita : "Amita",
+      },
         
     },
   },
