@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-const Card = ({data, handleEventType}) => {
-  const {title, description, price, image, event_type}=data
+const Card = ({data}) => {
+  const {title, description, price, image}=data
  
   
   
@@ -26,6 +26,7 @@ const Card = ({data, handleEventType}) => {
 
 Card.propTypes={
   data: PropTypes.object.isRequired,
+
 }
 
 export default Card

@@ -1,11 +1,7 @@
 
 import { useLoaderData } from "react-router-dom"
 import Card from "../card/Card"
-import { useState } from "react"
-
- 
-
-
+import PropTypes from 'prop-types';
 
 const Cards = ({handleEventType}) => {
   
@@ -22,8 +18,11 @@ const Cards = ({handleEventType}) => {
       }
     </div>
   )
- 
-
 }
+
+Cards.propTypes = {
+  handleEventType: PropTypes.string
+}
+
 
 export default Cards

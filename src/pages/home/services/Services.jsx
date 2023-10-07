@@ -1,5 +1,6 @@
 
 import {  NavLink } from "react-router-dom"
+import PropTypes from 'prop-types';
 
 
 const Services = ({handleEventType}) => {
@@ -19,8 +20,11 @@ const Services = ({handleEventType}) => {
       </ul>
   </div>
 
-
   )
+}
+
+Services.propTypes = {
+  handleEventType: PropTypes.string
 }
 
 export default Services

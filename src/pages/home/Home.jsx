@@ -1,6 +1,6 @@
 
 import { useState } from "react"
-import MemberShip from "./memberShip/MemberShip"
+import FindUs from "./findUs/FindUs"
 import Cards from "./services/Cards"
 import Services from "./services/Services"
 
@@ -20,9 +20,9 @@ const Home = () => {
         <main  className=" col-span-2">
           <Cards handleEventType={event}/>
         </main>
-        {/* right aside (membership) */}
+        {/* right aside (FindUs) */}
         <aside>
-          <MemberShip/>
+          <FindUs/>
         </aside>
  
     </div>
