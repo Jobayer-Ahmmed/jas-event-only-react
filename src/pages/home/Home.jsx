@@ -5,7 +5,8 @@ import Cards from "./services/Cards"
 import Services from "./services/Services"
 import Slider from "./slider/Slider"
 import Team from "./team/Team"
-import Feedback from "../feedback/Feedback"
+import Feedback from "./feedback/Feedback"
+
 
 
 

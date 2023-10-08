@@ -10,7 +10,7 @@ const Feedback = () => {
       .then(res=>res.json())
       .then(data=>setAllData(data))
     },[])
-    console.log(allData)
+    
     return (
       <div className=" mb-14">
         <h2 className="text-3xl font-bold text-center mb-2">Customer Feedback</h2>
