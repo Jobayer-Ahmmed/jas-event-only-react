@@ -6,7 +6,7 @@ import logo from "../../assets/images/jasevent.png"
 const Navbar = () => {
 
   return (
-    <div className="navbar bg-base-100 lg:px-xPadding my-8">
+    <div className="navbar bg-base-100 w-width mx-auto my-8">
     <div className="navbar-start flex justify-between lg:justify-start w-full">
       <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden  mr-5">

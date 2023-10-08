@@ -3,6 +3,7 @@ import { useState } from "react"
 import FindUs from "./findUs/FindUs"
 import Cards from "./services/Cards"
 import Services from "./services/Services"
+import Slider from "./slider/Slider"
 
 
 
@@ -13,7 +14,9 @@ const Home = () => {
   }
 
   return (
-    <div className="grid lg:grid-cols-4 px-xPadding gap-6 my-10">
+    <div className="w-width mx-auto">
+      <Slider/>
+      <div className="grid lg:grid-cols-4  gap-6 my-10">
         <aside>
           <Services handleEventType={handleEventType}/>
         </aside>
@@ -26,6 +29,7 @@ const Home = () => {
         </aside>
  
     </div>
+  </div>
   )
 }
 
