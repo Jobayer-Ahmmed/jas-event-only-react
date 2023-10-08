@@ -6,6 +6,7 @@ import Contact from "../pages/contact/Contact";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import CardDetails from "../pages/home/services/CardDetails";
+import ErrorPage from "../pages/errorPage/ErrorPage";
 // import MyBooking from "../pages/myBooking/MyBooking";
 
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     {
         path:"/",
         element:<Root/>,
+        errorElement:<ErrorPage/>,
         children:[
             {
                 path:"/",
