@@ -13,6 +13,7 @@ const Home = () => {
     setEvent(type)
   }
 
+
   return (
     <div className="w-width mx-auto">
       <Slider/>
