@@ -1,0 +1,36 @@
+ [
+      {
+        "id": 1,
+        "customer_name": "John Doe",
+        "event_type": "Wedding",
+        "rating": 5,
+        "image": "",
+        "comments": "The wedding event was fantastic! The arrangements were great, and the overall organization was impressive. I had a wonderful time."
+      },
+      {
+        "id": 2,
+        "customer_name": "Jane Smith",
+        "event_type": "Birthday Party",
+        "rating": 4.5,
+        "image": "",
+        "comments": "The birthday party was amazing! The decorations were on point, and the event was a lot of fun. Great job to the event organizers!"
+      },
+      {
+        "id": 3,
+        "customer_name": "Mike Johnson",
+        "event_type": "Anniversary",
+        "rating": 4.5,
+        "image": "",
+        "comments": "The anniversary celebration was beautiful. The coordination was great, and it made our day even more special. Thank you!"
+      },
+      {
+        "id": 4,
+        "customer_name": "Sara Davis",
+        "event_type": "Engagement",
+        "rating": 5,
+        "image": "",
+        "comments": "The engagement party was a huge success! The event management team did an exceptional job, and the ambiance was perfect for this special occasion."
+      }
+    ]
+
+  

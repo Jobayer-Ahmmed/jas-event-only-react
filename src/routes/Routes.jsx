@@ -18,12 +18,12 @@ const router = createBrowserRouter([
             {
                 path:"/",
                 element:<Home/>,
-                loader: async ()=> fetch("./myData.json") 
+                loader: async ()=> fetch("./eventData.json") 
             },
             {
                 path:"card/:cardId",
                 element:<CardDetails/>,
-                loader: async ()=> fetch("./myData.json") 
+                loader: async ()=> fetch("./eventData.json") 
             },
             {
                 path:"/about",

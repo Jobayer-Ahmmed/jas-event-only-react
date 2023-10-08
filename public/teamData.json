@@ -1,0 +1,62 @@
+
+[
+      {
+        "id": 1,
+        "name": "John Smith",
+        "position": "Director",
+        "image": "https://i.ibb.co/qp2Vz2S/t1.png",
+        "description": "Experienced event management professional with a strategic vision, responsible for overseeing and orchestrating events to perfection."
+      },
+      {
+        "id": 2,
+        "name": "Emily Davis",
+        "position": "Content Creator",
+        "image": "https://i.ibb.co/tJ3LPLG/t2.png",
+        "description": "Creative content enthusiast specializing in crafting engaging and impactful content to promote events and engage the audience."
+      },
+  
+      {
+        "id": 3,
+        "name": "Sarah Thompson",
+        "position": "Manager",
+        "image": "https://i.ibb.co/k0jybw0/t7.png",
+        "description": "Efficient manager skilled in coordinating all aspects of events, ensuring smooth execution and exceptional experiences for attendees."
+      },
+      {
+        "id": 4,
+        "name": "Alex Baker",
+        "position": "Technical Support",
+        "image": "https://i.ibb.co/YhJ7bLd/t3.png",
+        "description": "Tech-savvy professional providing technical expertise and support to ensure seamless execution of events with cutting-edge technology."
+      },
+      {
+        "id": 5,
+        "name": "Jessica Clark",
+        "position": "Designer",
+        "image": "https://i.ibb.co/h9hLvnF/t5.png",
+        "description": "Creative designer with an eye for aesthetics, responsible for visually stunning event materials that leave a lasting impression."
+      },
+      {
+        "id": 6,
+        "name": "Minhaj Hasan",
+        "position": "Marketing Coordinator",
+        "image": "https://i.ibb.co/xFNTYyZ/t9.png",
+        "description": "Results-driven marketing expert coordinating strategies to optimize event exposure, engagement, and attendee satisfaction."
+      },
+      {
+        "id": 7,
+        "name": "Rasel White",
+        "position": "Content Creator",
+        "image": "https://i.ibb.co/WcLppxk/t6.png",
+        "description": "Passionate content creator dedicated to developing compelling narratives and engaging content that resonate with the target audience."
+      },
+      {
+        "id": 8,
+        "name": "Amit Patel",
+        "position": "Technical Support",
+        "image": "https://i.ibb.co/Gdc1cfG/t8.png",
+        "description": "Diligent technical support expert providing event teams with the technical assistance needed for smooth event operations and success."
+      }
+    ]
+
+  

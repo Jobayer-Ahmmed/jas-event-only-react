@@ -5,9 +5,7 @@ const Card = ({data}) => {
   const navigate = useNavigate()
   const {id,title, description,image}=data
  
-  
-  
-  
+
   
   return (
     <div className="card w-full bg-base-100 rounded-lg shadow-xl">

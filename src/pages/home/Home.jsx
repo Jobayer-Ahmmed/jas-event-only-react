@@ -4,6 +4,7 @@ import FindUs from "./findUs/FindUs"
 import Cards from "./services/Cards"
 import Services from "./services/Services"
 import Slider from "./slider/Slider"
+import Team from "./team/Team"
 
 
 
@@ -29,7 +30,8 @@ const Home = () => {
           <FindUs/>
         </aside>
  
-    </div>
+      </div>
+      <Team/>
   </div>
   )
 }
