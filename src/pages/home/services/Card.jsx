@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const Card = ({data}) => {
-  const {title, description, price, image}=data
+  const navigate = useNavigate()
+  const {id,title, description,image}=data
  
   
   
@@ -15,9 +17,8 @@ const Card = ({data}) => {
     <div className="card-body items-center text-center">
       <h2 className="card-title">{title}</h2>
       <p>{description.slice(0,110)}...</p>
-      <p className=' font-bold my-3'>Price : {price}</p>
       <div className="card-actions">
-        <button className="btn bg-green-700 text-gray-200 hover:bg-green-800">See Details</button>
+        <button onClick={()=>navigate(`/card/${id}`)} className="btn bg-green-700 text-gray-200 hover:bg-green-800">See Details</button>
       </div>
     </div>
   </div>

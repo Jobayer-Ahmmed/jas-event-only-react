@@ -24,7 +24,7 @@ const Services = ({handleEventType}) => {
 }
 
 Services.propTypes = {
-  handleEventType: PropTypes.string
+  handleEventType: PropTypes.func
 }
 
 export default Services

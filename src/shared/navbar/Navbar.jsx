@@ -16,6 +16,7 @@ const Navbar = () => {
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/my-booking">My Booking</NavLink></li>
           <li><Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded">Login</Link></li>
           <li><Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link></li>
         </ul>
@@ -30,6 +31,7 @@ const Navbar = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
+        <li><NavLink to="/my-booking">My Booking</NavLink></li>
       </ul>
     </div>
     {/* for desktop */}

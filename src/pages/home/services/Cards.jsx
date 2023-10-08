@@ -1,6 +1,6 @@
 
 import { useLoaderData } from "react-router-dom"
-import Card from "../card/Card"
+import Card from "./Card";
 import PropTypes from 'prop-types';
 
 const Cards = ({handleEventType}) => {

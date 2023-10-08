@@ -5,6 +5,9 @@ import About from "../pages/about/About";
 import Contact from "../pages/contact/Contact";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
+import CardDetails from "../pages/home/services/CardDetails";
+import MyBooking from "../pages/myBooking/MyBooking";
+
 
 
 const router = createBrowserRouter([
@@ -18,6 +21,11 @@ const router = createBrowserRouter([
                 loader: async ()=> fetch("./myData.json") 
             },
             {
+                path:"card/:cardId",
+                element:<CardDetails/>,
+                loader: async ()=> fetch("./myData.json") 
+            },
+            {
                 path:"/about",
                 element:<About/>
             },
@@ -26,13 +34,18 @@ const router = createBrowserRouter([
                 element:<Contact/>
             },
             {
+                path:"/my-booking",
+                element:<MyBooking/>
+            },
+            {
                 path:"/register",
                 element:<Register/>
             },
             {
                 path:"/login",
                 element:<Login/>
-            }
+            },
+
         ]
     }
 ])
