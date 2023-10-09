@@ -16,10 +16,6 @@ const Register = () => {
     const myPassword = myForm.get("password")
     const myConfirmPassword = myForm.get("confirm_password")
 
-  
-    console.log()
-
-    console.log(myEmail, myPassword, myConfirmPassword)
     setMessage('')
 
     if(myPassword.length>=6){
@@ -31,7 +27,7 @@ const Register = () => {
                 toast.success("Congratulations! Registration successfull")
                 console.log(res)
               })
-              .catch(err=>console.log(err))
+              .catch(err=>setMessage(err.message))
             }
             else{
               setMessage("Confirm password did not match") 
@@ -62,13 +58,13 @@ const Register = () => {
       <div className="w-full h-[2px] bg-priColor"></div>
       <form onSubmit={handleRegister} className="mt-4 text-xl w-[90%] mx-auto">
         <label htmlFor="">Enter Email</label><br />
-        <input type="email" name="email" placeholder="Email" className="w-full h-10 pl-5 mt-1 mb-3 rounded"/> <br />
+        <input type="email" name="email" placeholder="Email" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]"/> <br />
 
         <label htmlFor="">Enter Password</label><br />
-        <input type="password" name="password" placeholder="Password" className="w-full h-10 pl-5 mt-1 mb-3 rounded" /> <br />
+        <input type="password" name="password" placeholder="Password" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]" /> <br />
 
         <label htmlFor="">Confirm Password</label><br />
-        <input type="password" name="confirm_password" placeholder="Confirm Password" className="w-full h-10 pl-5 mt-1 mb-3 rounded" /><br />
+        <input type="password" name="confirm_password" placeholder="Confirm Password" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]" /><br />
 
         <input type="submit" value="Register" className="px-6 py-2 text-xl text-white bg-priColor rounded"/>
       </form>
