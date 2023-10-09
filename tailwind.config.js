@@ -12,7 +12,8 @@ export default {
 
       },
       spacing: {            
-        width: "1120px"
+        width: "1200px",
+        xPadding:"30px"
       },
       fontFamily:{
         amita : "Amita",

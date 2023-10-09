@@ -4,6 +4,7 @@ import { createContext } from "react"
 import myAuth from "../firebase/firebase.config.js"
 import PropTypes from 'prop-types';
 
+
 const MyAuthContext = createContext()
 
 const MyAuthProvider = ({children}) => {
@@ -33,6 +34,7 @@ const MyAuthProvider = ({children}) => {
         setLoading(true)
         return signOut(myAuth)
     }
+    const loginToast={isBoolean: false}
 
     useEffect(()=>{
         const unSubscribe = onAuthStateChanged(myAuth, (myCurrentUser)=>{
@@ -51,7 +53,7 @@ const MyAuthProvider = ({children}) => {
         loading,
         googleLogin,
         githubLogin,
-
+        loginToast
     }
 
   return (

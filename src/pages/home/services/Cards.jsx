@@ -6,13 +6,13 @@ import {  useState } from "react";
 
 const Cards = ({handleEventType}) => {
 
-  const [length, setLength] = useState(3)
+  const [length, setLength] = useState(4)
   const getData = useLoaderData()
 
     let datas = getData.filter(data=>data.event_type==handleEventType)
 
   return(
-    <div className="grid grid-cols-1 gap-10 mb-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
       {
         datas.length?
         datas.slice(0, length).map(data=> <Card key={data.id} data={data}/>)
@@ -20,7 +20,7 @@ const Cards = ({handleEventType}) => {
 
       }
 
-      <div className={(length==getData.length)? 'hidden' : (length==datas.length)? 'hidden':''}>
+      <div className={(length==getData.length)? 'hidden' : (length!=datas.length)? 'hidden':''}>
         <button onClick={()=>setLength(getData.length)} className="px-6 py-2 text-xl text-white bg-priColor rounded">See All</button>
       </div>
       {

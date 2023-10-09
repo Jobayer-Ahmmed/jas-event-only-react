@@ -7,7 +7,8 @@ const Services = ({handleEventType}) => {
 
 
   return (
-    <div className="bg-gray-100 p-5 rounded-lg">
+<div>
+<div className=" bg-gray-100 p-5 rounded-lg">
       <h3 className="mb-3 text-2xl">Services</h3>
       <div className="w-full h-[2px] bg-priColor"></div>
       <ul className="mt-3">
@@ -19,6 +20,7 @@ const Services = ({handleEventType}) => {
         <li id="services" className="mt-1" onClick={()=>handleEventType("baby_shower")}><NavLink >Baby shower</NavLink></li>
       </ul>
   </div>
+</div>
 
   )
 }

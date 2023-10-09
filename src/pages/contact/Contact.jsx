@@ -12,9 +12,9 @@ const Contact = () => {
       </ul>
       <p className="mb-2">Follow us on social media:</p>
       <ul>
-        <li><a href="https://www.facebook.com/jasevent" className="text-blue-500">Facebook: JAS Event Facebook</a></li>
-        <li><a href="https://twitter.com/jasevent" className="text-blue-500">Twitter: JAS Event Twitter</a></li>
-        <li><a href="https://www.instagram.com/jasevent" className="text-blue-500">Instagram: JAS Event Instagram</a></li>
+        <li><a href="https://www.facebook.com/" className="text-blue-500">Facebook: JAS Event Facebook</a></li>
+        <li><a href="https://twitter.com/" className="text-blue-500">Twitter: JAS Event Twitter</a></li>
+        <li><a href="https://www.instagram.com/" className="text-blue-500">Instagram: JAS Event Instagram</a></li>
       </ul>
     </div>
   );

@@ -33,8 +33,9 @@ const FindUs = () => {
   }
 
   return (
-    <aside>
-    <div className="bg-gray-100 p-5 rounded-lg mb-10">
+    <div className="w-full">
+    <div className="flex justify-between flex-col md:flex-row lg:flex-col gap-6">
+    <div className="w-full bg-gray-100 p-5 rounded-lg">
       <div>
         <h4 className="mb-3 text-xl">Login with!</h4>
         <div className="w-full h-[2px] bg-priColor"></div>
@@ -42,12 +43,13 @@ const FindUs = () => {
           <p onClick={handleGithubLogin} className="cursor-pointer active:text-green-600"><AiFillGithub className="inline"/> GitHub</p>
       </div>
     </div>
-    <div className="bg-gray-100 p-5 rounded-lg">
+    <div className="w-full bg-gray-100 p-5 rounded-lg">
       <h4 className="mb-3 text-xl">Find Us On</h4>
       <div className="w-full h-[2px] bg-priColor"></div>
       <Link to="https://www.facebook.com/" className="cursor-pointer mt-3 mb-2 active:text-green-600 block"><FaFacebookSquare className="inline"/>  Facebook</Link>
       <Link to="https://www.youtube.com/" className="cursor-pointer mb-2 active:text-green-600 block"><BsYoutube className="inline"/>  YouTube</Link>
       <Link to="https://twitter.com/" className="cursor-pointer active:text-green-600 block"><BsTwitter className="inline"/>  Twitter</Link>
+    </div>
     </div>
 
     <ToastContainer
@@ -63,7 +65,7 @@ const FindUs = () => {
           theme="colored"
       />
 
-  </aside>
+  </div>
   )
 }
 

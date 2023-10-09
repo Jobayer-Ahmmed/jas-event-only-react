@@ -4,7 +4,7 @@ const Customer = ({data}) => {
     const {customer_name, event_type, image, comments, rating} =data
    
   return (
-    <div>
+    <div className=''>
        
         <div className="w-28 h-28  avatar  border-gray-400 border-[3px]">
             <img src={image} className='w-24 h-24 '/>

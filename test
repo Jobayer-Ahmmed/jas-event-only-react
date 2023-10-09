@@ -16,7 +16,7 @@ const Slider=()=>{
 
    ];
    return (
-      <div className="w-width mx-auto">
+      <div className="w-width mx-auto ">
          <SimpleImageSlider
             width={1120}
             height={500}

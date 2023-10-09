@@ -4,7 +4,7 @@ const Member = ({data}) => {
     const {name, position, image, description} =data
    
   return (
-    <div>
+    <div className=''>
        
             <div className="w-28 h-28  avatar  border-gray-400 border-[3px] rounded-full">
                 <img src={image} className='w-24 h-24  rounded-full'/>
