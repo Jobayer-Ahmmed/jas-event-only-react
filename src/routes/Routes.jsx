@@ -7,6 +7,7 @@ import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import CardDetails from "../pages/home/services/CardDetails";
 import ErrorPage from "../pages/errorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 // import MyBooking from "../pages/myBooking/MyBooking";
 
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
             },
             {
                 path:"card/:cardId",
-                element:<CardDetails/>,
+                element:<PrivateRoute><CardDetails/></PrivateRoute>,
                 loader: async ()=> fetch("./eventData.json") 
             },
             {
