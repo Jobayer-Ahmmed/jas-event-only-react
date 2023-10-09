@@ -25,7 +25,7 @@ const Navbar = () => {
           <li><NavLink to="/contact">Contact</NavLink></li>
           {
         myUser? 
-        <div className="hidden lg:block ">
+        <div className="lg:hidden ">
             <div className="flex justify-center items-center">
               <p>{myUser.displayName}</p>
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -37,7 +37,7 @@ const Navbar = () => {
             </div> 
         </div>
         :
-        <div className=" hidden lg:block">
+        <div className="  lg:hidden">
           <Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
           <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
         </div>
