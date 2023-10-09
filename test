@@ -1,47 +1,18 @@
-// src/data/socialServicesData.json
-{
-  "services": [
-    {
-      "id": 1,
-      "name": "Wedding Planning",
-      "description": "Comprehensive wedding planning and coordination.",
-      "price": 10000,
-      "imageUrl": "https://example.com/wedding.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Birthday Party Organization",
-      "description": "Plan and organize a memorable birthday party.",
-      "price": 3000,
-      "imageUrl": "https://example.com/birthday.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Anniversary Celebration",
-      "description": "Organize a special celebration for your anniversary.",
-      "price": 2500,
-      "imageUrl": "https://example.com/anniversary.jpg"
-    },
-    {
-      "id": 4,
-      "name": "Engagement Party Planning",
-      "description": "Plan and execute an engagement party for your loved ones.",
-      "price": 2000,
-      "imageUrl": "https://example.com/engagement.jpg"
-    },
-    {
-      "id": 5,
-      "name": "Retirement Party Management",
-      "description": "Host a memorable retirement party for your colleagues.",
-      "price": 1500,
-      "imageUrl": "https://example.com/retirement.jpg"
-    },
-    {
-      "id": 6,
-      "name": "Baby Shower Coordination",
-      "description": "Organize a joyful baby shower celebration.",
-      "price": 1800,
-      "imageUrl": "https://example.com/babyshower.jpg"
-    }
-  ]
-}
+updateProfile(auth.currentUser, {
+  displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
+}).then(() => {
+  // Profile updated!
+  // ...
+}).catch((error) => {
+  // An error occurred
+  // ...
+});
+
+
+
+useEffect(()=>{
+  updateProfile(myAuth.currentUser,{
+      displayName: "Jane Q. User",
+      photoURL: "https://example.com/jane-q-user/profile.jpg"
+    })
+},[])

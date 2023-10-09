@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import { MyAuthContext } from "../../contextApi/MyAuthProvider"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { updateProfile } from "firebase/auth";
+import myAuth from "../../firebase/firebase.config";
 
 
 const Register = () => {
@@ -14,7 +16,11 @@ const Register = () => {
     const myForm = new FormData(e.currentTarget)
     const myEmail = myForm.get("email")
     const myPassword = myForm.get("password")
+    const myPhoto = myForm.get("photo")
+    const myName = myForm.get("name")
     const myConfirmPassword = myForm.get("confirm_password")
+
+    console.log(myName, myPhoto)
 
     setMessage('')
 
@@ -23,9 +29,21 @@ const Register = () => {
           if(/(?=.*[a-z])/.test(myPassword)){
             if(myPassword===myConfirmPassword){
               myCreateUser(myEmail, myPassword)
-              .then(res=>{
-                toast.success("Congratulations! Registration successfull")
-                console.log(res)
+              .then((res1)=>{
+
+
+                updateProfile(myAuth.currentUser, {
+                  displayName: myName, 
+                  photoURL: myPhoto
+                  })
+                  .then((res2) => {
+                    console.log(res1)
+                    console.log(res2)
+                    toast.success("Congratulations! Registration successfull")
+                  })
+                .catch((err) => {
+                    console.log(err.messsage)
+                });
               })
               .catch(err=>setMessage(err.message))
             }
@@ -57,6 +75,9 @@ const Register = () => {
       <h2 className="text-3xl font-bold text-center mb-3">Register Now!</h2>
       <div className="w-full h-[2px] bg-priColor"></div>
       <form onSubmit={handleRegister} className="mt-4 text-xl w-[90%] mx-auto">
+        <label htmlFor="">Username</label><br />
+        <input type="text" name="name" placeholder="Username" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]" /><br />
+
         <label htmlFor="">Enter Email</label><br />
         <input type="email" name="email" placeholder="Email" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]"/> <br />
 
@@ -65,6 +86,9 @@ const Register = () => {
 
         <label htmlFor="">Confirm Password</label><br />
         <input type="password" name="confirm_password" placeholder="Confirm Password" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]" /><br />
+       
+        <label htmlFor="">Insert URL of Your Photo</label><br />
+        <input type="text" name="photo" placeholder="Photo URL" className="w-full h-10 pl-4 mt-1 mb-3 rounded text-[16px]" /><br />
 
         <input type="submit" value="Register" className="px-6 py-2 text-xl text-white bg-priColor rounded"/>
       </form>

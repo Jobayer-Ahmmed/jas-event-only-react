@@ -1,9 +1,19 @@
 import { Link, NavLink } from "react-router-dom"
 import logo from "../../assets/images/jasevent.png"
+import { useContext } from "react"
+import { MyAuthContext } from "../../contextApi/MyAuthProvider"
 
 
 
 const Navbar = () => {
+
+  const {myUser, myLogOut} = useContext(MyAuthContext)
+
+  const handleLogout=()=>{
+      myLogOut()
+      .then(()=>console.log("logout successfull"))
+      .catch(err=>console.log(err.message))
+  }
 
   return (
     <div className="navbar bg-base-100 w-width mx-auto my-8">
@@ -26,8 +36,8 @@ const Navbar = () => {
         <img src={logo} alt="" className="w-10"/> 
       </div>
     </div>
-    <div className="navbar-center hidden lg:flex mr-20">
-      <ul className="menu menu-horizontal px-1 gap-10 text-xl ">
+    <div className="navbar-center hidden lg:flex mr-6">
+      <ul className="menu menu-horizontal px-1 gap-2 text-xl ">
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/contact">Contact</NavLink></li>
@@ -35,13 +45,27 @@ const Navbar = () => {
       </ul>
     </div>
     {/* for desktop */}
-    <div className="navbar-end hidden lg:block">
-        <Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
-        <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
 
-      <div>
-      </div>
-    </div>
+    {
+        myUser? 
+        <div className="navbar-end hidden lg:block ">
+            <div className="flex justify-center items-center">
+              <p>{myUser.displayName}</p>
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src={myUser.photoURL} alt="" />
+                </div>
+              </label>
+              <button onClick={handleLogout} className="px-6 py-2 text-xl text-white bg-priColor rounded">Log Out</button>           
+            </div> 
+        </div>
+        :
+        <div className="navbar-end hidden lg:block">
+          <Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
+          <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
+        </div>
+    }
+
 
   </div>
   )

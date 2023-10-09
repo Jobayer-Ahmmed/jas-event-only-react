@@ -1,12 +1,15 @@
-import { useLoaderData, useParams } from "react-router-dom"
+import { Navigate, useLoaderData, useParams } from "react-router-dom"
 import { getCard, saveCard } from "../../../localstorage/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useEffect, useState } from "react";
 
 
 const CardDetails = () => {
   const allData = useLoaderData()
   const {cardId} = useParams()
+  const [datas, setDatas] = useState([])
+
 
   const handleDonation=()=>{
     
@@ -18,10 +21,20 @@ const CardDetails = () => {
     else
       toast.success("Thank you for booking")
   }
-  
-  const data = allData.find(data=> data.id == cardId)
+  console.log(allData)
+ useEffect(()=>{
+  const data =  allData?.find(data=> data.id == cardId)
+  setDatas(data)
 
-  const {title, description, price, image}=data
+ },[])
+ console.log(datas)
+
+if(!allData.length)
+  return <Navigate to="/"></Navigate>
+
+const {title, description, price, image}=datas
+
+
   return (
     <div className="mt-topMargin px-12 lg:px-leftRightPadding">
       <div className="relative w-full">
