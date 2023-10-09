@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-<div className="navbar bg-base-100">
+<div className="navbar bg-base-100 ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -23,8 +23,25 @@ const Navbar = () => {
       <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/contact">Contact</NavLink></li>
-          <li><Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded">Login</Link></li>
-          <li><Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link></li>
+          {
+        myUser? 
+        <div className="hidden lg:block ">
+            <div className="flex justify-center items-center">
+              <p>{myUser.displayName}</p>
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src={myUser.photoURL} alt="" />
+                </div>
+              </label>
+              <button onClick={handleLogout} className="px-6 py-2 text-xl text-white bg-priColor rounded">Log Out</button>           
+            </div> 
+        </div>
+        :
+        <div className=" hidden lg:block">
+          <Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
+          <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
+        </div>
+    }
       </ul>
     </div>
     <img src={logo} alt="" className="w-40 md:w-48" />

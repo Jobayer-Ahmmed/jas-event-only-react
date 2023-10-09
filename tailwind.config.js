@@ -12,7 +12,7 @@ export default {
 
       },
       spacing: {            
-        width: "1200px",
+        width: "1150px",
         xPadding:"30px"
       },
       fontFamily:{
