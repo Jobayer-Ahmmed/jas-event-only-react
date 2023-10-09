@@ -65,8 +65,6 @@ const Navbar = () => {
           <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
         </div>
     }
-
-
   </div>
   )
 }
