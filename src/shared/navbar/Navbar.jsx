@@ -26,7 +26,7 @@ const Navbar = () => {
           {
         myUser? 
         <div className="lg:hidden ">
-            <div className="flex justify-center items-center">
+            <div className="flex flex-col">
               <p>{myUser.displayName}</p>
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
@@ -38,8 +38,10 @@ const Navbar = () => {
         </div>
         :
         <div className="  lg:hidden">
-          <Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
+<div className="flex flex-col">
+<Link to="/login" className="px-6 py-2 text-xl text-white bg-priColor rounded mr-6">Login</Link>
           <Link to="/register" className="px-6 py-2 text-xl text-white bg-priColor rounded">Register</Link>
+</div>
         </div>
     }
       </ul>
